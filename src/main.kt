@@ -1,20 +1,12 @@
 fun main() {
     println("Hello World")
-    val question:Question? = Question()
+    val q = Question()
 
 
-    println("The answer is ${question?.Question} is ${question?.answer}")
+    println("The answer is ${q.question} is ${q.answer}")
 
-    question?.answer = "42"
-
-    val message =
-    if(question?.answer == question?.correctAnswer) {
-        "right"
-    } else {
-        "wrong"
-    }
-
-    println(message)
+    q.answer = "42"
+    q.printResult()
 
 
 
